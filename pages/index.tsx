@@ -99,13 +99,17 @@ export default function Home() {
         <Flex gap="2.5rem" mb="6rem">
           <Flex flex={5} flexDir="column" gap="2.2rem">
             <Heading color="white" fontSize="3.3rem" fontWeight="700">
-              Easy enough to learn on your own, but you don&apos;t have to
+              Send Personalized and Meaningful Messages to Most (loved ones)
             </Heading>
             <Box as="p" color="#907D7D" fontSize="xl">
-              Project discussions, important documents, free food announcements:
-              they all live tidily together in Team. With your team and
-              information in one easily searchable place, collaborating online
-              is as easy as collaborating in person.
+              Spammm is a revolutionary new stupid idea that you always needed.
+              It basically allows teenagers to annoy the heck out of their
+              friends on social media and via phone and email, all for the low,
+              low price of just 15 rupee per day! You pay us, we spam them. But
+              but… if you cancel the payment midway, oh dear, we&apos;ll have to
+              reveal your name to that individual. But if you want to get
+              protected from all the spamming, we&apos;ve got you covered. No
+              more than Rs. 500/month.
             </Box>
             <Button size="lg" w="max-content" px="4rem">
               Learn more
@@ -121,7 +125,8 @@ export default function Home() {
               Simple Membership
             </Heading>
             <Box as="p" color="#907D7D" fontSize="xl">
-              Use the Startup Framework for free with no limits.
+              Our plans start at as cheap as Rs. 15 per day, so that anyone can
+              annoy their friends and foes.
             </Box>
           </Box>
           <Flex p="0 2rem" gap="1rem">
@@ -140,12 +145,13 @@ export default function Home() {
                   fontWeight="700"
                   fontSize="2xl"
                 >
-                  <Box as="span">Starter</Box>
-                  <Box as="span">Rs. 15</Box>
+                  <Box as="span">Spam</Box>
+                  <Box as="span">Rs. 15/day</Box>
                 </Flex>
                 <Box as="p" fontSize="xl">
-                  Unlimited recipes, plans, programs and more. All you need to
-                  make eating healthy ridiculously.
+                  Spam the people you detest on all the platforms including
+                  Twitter, Instagram, Mail, Phone and SMS with AI generated
+                  messages that criticize them.
                 </Box>
                 <Button
                   className={montserrat.className}
@@ -162,7 +168,7 @@ export default function Home() {
                     bg: '#bb1d59',
                   }}
                 >
-                  Get started for Free
+                  Get started for Rs. 15
                 </Button>
               </Flex>
             </Box>
@@ -181,12 +187,13 @@ export default function Home() {
                   fontWeight="700"
                   fontSize="2xl"
                 >
-                  <Box as="span">Starter</Box>
-                  <Box as="span">Rs. 15</Box>
+                  <Box as="span">Protection</Box>
+                  <Box as="span">Rs. 5000/mo</Box>
                 </Flex>
                 <Box as="p" fontSize="xl">
-                  Unlimited recipes, plans, programs and more. All you need to
-                  make eating healthy ridiculously.
+                  Protect yourself from your enemies and make sure they can't
+                  make your digital life annoying by protecting yourself from
+                  our spam
                 </Box>
                 <Button
                   className={montserrat.className}
@@ -203,7 +210,7 @@ export default function Home() {
                     bg: '#bb1d59',
                   }}
                 >
-                  Get started for Free
+                  Get started for Rs. 500
                 </Button>
               </Flex>
             </Box>

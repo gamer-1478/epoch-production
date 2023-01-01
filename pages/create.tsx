@@ -36,7 +36,23 @@ export default function Login() {
               e.preventDefault();
               const formData = new FormData(e.currentTarget as any);
 
-              await fetch('/api/spam', {});
+              await fetch('/api/spam', {
+                method: 'POST',
+                body: JSON.stringify({
+                  description: formData.get('description'),
+                  instagram: formData.get('instagram'),
+                  twitter: formData.get('twitter'),
+                  phone: formData.get('phone'),
+                  name: formData.get('name'),
+                  email: formData.get('email'),
+                }),
+                headers: {
+                  'Content-Type': 'application/json',
+                  Accept: 'application/json',
+                },
+              }).then(r => r.text());
+
+              await router.push('/dashboard');
             }}
           >
             <Heading fontSize="3.5rem">Annoy your friends and foe!</Heading>
@@ -88,12 +104,12 @@ export default function Login() {
               _hover={{ bg: '#E93A7D' }}
               rounded="4rem"
               w="min-content"
-              onClick={async () => {
-                await signIn('google', {
-                  redirect: false,
-                  callbackUrl: '/dashboard',
-                });
-              }}
+              // onClick={async () => {
+              //   await signIn('google', {
+              //     redirect: false,
+              //     callbackUrl: '/dashboard',
+              //   });
+              // }}
             >
               Spam them
             </Button>

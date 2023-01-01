@@ -12,7 +12,7 @@ export async function spamCall(number: string, message: string) {
   });
 
   const call = await client.calls.create({
-    url: `https://c6a4-49-249-72-18.ngrok.io/api/${audio.id}`,
+    url: `https://spammm.mokshitjain.co/api/${audio.id}`,
     to: number,
     from: '+19804007835',
   });

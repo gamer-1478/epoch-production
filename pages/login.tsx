@@ -1,8 +1,11 @@
 import { Box, Button, Flex, Heading, Input } from '@chakra-ui/react';
+import { GetServerSideProps } from 'next';
+import { unstable_getServerSession } from 'next-auth';
 import { signIn } from 'next-auth/react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { font } from '../lib/font';
+import { authOptions } from './api/auth/[...nextauth]';
 
 export default function Login() {
   const router = useRouter();
@@ -76,3 +79,20 @@ export default function Login() {
     </Flex>
   );
 }
+
+export const getServerSideProps: GetServerSideProps = async ctx => {
+  const session = await unstable_getServerSession(
+    ctx.req,
+    ctx.res,
+    authOptions
+  );
+
+  if (!session?.user) return { props: {} };
+
+  return {
+    redirect: {
+      destination: '/dashboard',
+      permanent: false,
+    },
+  };
+};
