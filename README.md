@@ -1,3 +1,16 @@
+# About The Project
+
+Spammm is the revolutionary stupid idea you've been looking for. It basically allows you to annoy the heck out of your friends and foes on social media and via phone and email, all for the low, low price of just Rs. 15 per day! It’s simple: You pay us, and we spam them.
+However, there is a catch: if you cancel the subscription, we will reveal your identity to the individual being spammed. And, if you want to be protected from spam, we've got you covered for less than Rs. 500 each month.
+So the next time somebody annoys you, don't curse them, just Spammm them!!
+
+
+
+---
+
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
